@@ -1,0 +1,22 @@
+# follow below instructions to enable Ansible used with Root login
+# if you get an error as ansible executable not found, switch to root login and install ansible with below commands.
+
+$ pip3 install ansible
+
+# if the requirements are already fulfilled, then create a link using  below command,
+
+$ ln -s /usr/local/bin/ansible /usr/bin/ansible
+
+# try running the ansible version command to check if ansible executabel is reachable.
+
+$ ansible --version
+
+# Now, create SSH key pair using below commands,
+
+$ ssh-keygen
+
+# deploy SSH keys to the targeted host.
+
+$ ssh-copy-id root@localhost
+$ ssh-copy-id root@<ip-address-of-remote-host>
+
