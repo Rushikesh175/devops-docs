@@ -20,3 +20,7 @@ $ ssh-keygen
 $ ssh-copy-id root@localhost
 $ ssh-copy-id root@<ip-address-of-remote-host>
 
+# Now, try running the ansible ad-hoc command,
+
+$ ansible appserver -i hosts -m user -a "name=ganeshhp state=present" 
+ 
