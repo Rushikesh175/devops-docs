@@ -1,0 +1,9 @@
+localhost
+
+[jenkins]
+172.254.254.222
+
+[appserver]
+localhost
+172.254.254.222
+
